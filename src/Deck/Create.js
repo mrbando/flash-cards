@@ -30,7 +30,7 @@ function DeckCreate() {
                     </li>
                 </ol>
             </nav>
-            <h1>Create Deck</h1>
+            <h1>Deck Creation Center</h1>
             <DeckForm 
                 onSubmit={submitHandler}
                 onCancel={cancel}

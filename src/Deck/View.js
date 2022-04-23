@@ -27,7 +27,7 @@ function DeckView() {
             "Delete this card?\n\nYou will not be able to recover it."
         );
         if(confirmed){
-            deleteDeck(cardId).then(loadDeck)
+            deleteCard(cardId).then(loadDeck)
         }
     };
 

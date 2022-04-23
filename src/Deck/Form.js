@@ -6,7 +6,7 @@ function DeckForm({ onSubmit, onCancel, initialState = { name: "", description: 
     function changeHandler({ target: { name, value }}) {
         setDeck((prevState) => ({
             ...prevState,
-            [name]: value,
+            [name]: value
         }))
     }
 
@@ -19,6 +19,8 @@ function DeckForm({ onSubmit, onCancel, initialState = { name: "", description: 
     // stopPropagation() -
         // When dispatched in a tree, invoking this method prevents event 
         // from reaching any objects other than the current object.
+
+        
     function submitHandler(e) {
         e.preventDefault();
         e.stopPropagation();
